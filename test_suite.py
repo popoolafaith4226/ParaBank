@@ -134,7 +134,7 @@ def error_username_response(login):
     error_message = RegisterButton(login.driver).get_error_message_text()
     assert error_message == "This username already exists."
 
-# login
+# login to the app
 def test_user_login(login):
 
     the_username = LoginPages(login.driver)
